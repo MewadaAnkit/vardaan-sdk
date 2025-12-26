@@ -1,0 +1,33 @@
+{
+  "name": "vardaan-sdk",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "self-healing",
+    "resilience",
+    "circuit-breaker",
+    "express",
+    "middleware",
+    "api-health"
+  ],
+  "author": "Ankit",
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^5.0.0",
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.0"
+  }
+}
